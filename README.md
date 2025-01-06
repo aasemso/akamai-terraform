@@ -1,5 +1,5 @@
 # akamai-terraform
-1. $ brew install akamai
+1. ´´´ $ brew install akamai
 
 2. $ akamai install terraform
 
