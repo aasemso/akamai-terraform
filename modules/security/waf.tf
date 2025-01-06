@@ -2226,7 +2226,7 @@ resource "akamai_appsec_rule" "testing_terraform_firewall_policy_aseweb_attackcm
   config_id          = akamai_appsec_configuration.config.config_id
   security_policy_id = akamai_appsec_waf_protection.testing_terraform_firewall_policy.security_policy_id
   rule_id            = "950002"
-  rule_action        = "alert"
+  rule_action        = "deny"
 }
 
 // CMD Injection Attack Detected (OS Commands 5)
