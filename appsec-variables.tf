@@ -5,7 +5,7 @@ variable "group_name" {
 
 variable "contract_id" {
   type    = string
-  default = "105733"
+  default = ""
 }
 
 variable "name" {
