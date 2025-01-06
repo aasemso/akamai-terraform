@@ -95,6 +95,6 @@ resource "akamai_appsec_reputation_protection" "testing_terraform_firewall_polic
 resource "akamai_appsec_slowpost_protection" "testing_terraform_firewall_policy" {
   config_id          = akamai_appsec_configuration.config.config_id
   security_policy_id = akamai_appsec_reputation_protection.testing_terraform_firewall_policy.security_policy_id
-  enabled            = false
+  enabled            = true
 }
 
