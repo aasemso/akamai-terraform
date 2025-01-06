@@ -5,7 +5,7 @@ variable "group_name" {
 
 variable "contract_id" {
   type    = string
-  default = ""
+  default = "105733"
 }
 
 variable "name" {
@@ -25,7 +25,7 @@ variable "hostnames" {
 
 variable "emails" {
   type    = list(string)
-  default = ["noreply@example.org"]
+  default = ["ase.marie.solnor@dnb.no"]
 }
 
 variable "activation_note" {
