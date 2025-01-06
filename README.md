@@ -2,6 +2,7 @@
 1. 
 ``` sh 
 $ brew install akamai
+```
 
 2. $ akamai install terraform
 
