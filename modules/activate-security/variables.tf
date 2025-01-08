@@ -5,7 +5,7 @@ variable "name" {
 
 variable "config_id" {
   type = number
-  default = "105733"
+  default = 105733
 }
 
 variable "note" {

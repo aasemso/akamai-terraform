@@ -1,11 +1,12 @@
 variable "group_name" {
   type    = string
-  default = ""
+  default = "AU Web + Fraud Protection-V-3YSNQK2"
 }
 
 variable "contract_id" {
   type    = string
-  default = "ctr_V-3YSNQK2"
+  default = "V-3YSNQK2"
+  #default = "ctr_V-3YSNQK2"
 }
 
 variable "name" {
@@ -36,4 +37,7 @@ variable "activation_note" {
 variable "network" {
   type    = string
   default = "STAGING"
+}
+variable "config_id" {
+  type = string
 }
