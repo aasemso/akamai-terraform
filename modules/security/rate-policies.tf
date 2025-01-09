@@ -1,5 +1,5 @@
 resource "akamai_appsec_rate_policy" "origin_error" {
-  config_id = akamai_appsec_configuration.config.config_id
+  config_id = data.akamai_appsec_configuration.config.config_id
   rate_policy = jsonencode(
     {
       "additionalMatchOptions" : [
@@ -43,7 +43,7 @@ resource "akamai_appsec_rate_policy" "origin_error" {
 }
 
 resource "akamai_appsec_rate_policy" "page_view_requests" {
-  config_id = akamai_appsec_configuration.config.config_id
+  config_id = data.akamai_appsec_configuration.config.config_id
   rate_policy = jsonencode(
     {
       "additionalMatchOptions" : [
@@ -160,7 +160,7 @@ resource "akamai_appsec_rate_policy" "page_view_requests" {
 }
 
 resource "akamai_appsec_rate_policy" "post_page_requests" {
-  config_id = akamai_appsec_configuration.config.config_id
+  config_id = data.akamai_appsec_configuration.config.config_id
   rate_policy = jsonencode(
     {
       "additionalMatchOptions" : [
@@ -189,7 +189,7 @@ resource "akamai_appsec_rate_policy" "post_page_requests" {
 }
 
 resource "akamai_appsec_rate_policy" "http_response_codes" {
-  config_id = akamai_appsec_configuration.config.config_id
+  config_id = data.akamai_appsec_configuration.config.config_id
   rate_policy = jsonencode(
     {
       "additionalMatchOptions" : [

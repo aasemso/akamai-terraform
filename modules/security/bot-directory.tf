@@ -1,5 +1,5 @@
 resource "akamai_botman_custom_bot_category" "ak_2410wcxp_friendlypartnerbot_09631d9f-e255-4e46-ab7f-6722531409c0" {
-  config_id = akamai_appsec_configuration.config.config_id
+  config_id = data.akamai_appsec_configuration.config.config_id
   custom_bot_category = jsonencode(
     {
       "categoryName" : "2410-wcxp_FriendlyPartnerBot",
@@ -9,7 +9,7 @@ resource "akamai_botman_custom_bot_category" "ak_2410wcxp_friendlypartnerbot_096
 }
 
 resource "akamai_botman_custom_bot_category" "ak_2410wcxp_impersonatorpartnerbot_f0a8eb23-3a1e-4d6b-9448-055d5c81b23a" {
-  config_id = akamai_appsec_configuration.config.config_id
+  config_id = data.akamai_appsec_configuration.config.config_id
   custom_bot_category = jsonencode(
     {
       "categoryName" : "2410-wcxp_ImpersonatorPartnerBot"
@@ -18,7 +18,7 @@ resource "akamai_botman_custom_bot_category" "ak_2410wcxp_impersonatorpartnerbot
 }
 
 resource "akamai_botman_custom_bot_category_sequence" "custom_bot_category_sequence" {
-  config_id    = akamai_appsec_configuration.config.config_id
+  config_id    = data.akamai_appsec_configuration.config.config_id
   category_ids = [akamai_botman_custom_bot_category.ak_2410wcxp_friendlypartnerbot_09631d9f-e255-4e46-ab7f-6722531409c0.category_id, akamai_botman_custom_bot_category.ak_2410wcxp_impersonatorpartnerbot_f0a8eb23-3a1e-4d6b-9448-055d5c81b23a.category_id]
 }
 

@@ -14,7 +14,7 @@ variable "description" {
 
 variable "contract_id" {
   type = string
-  default = "WAAP V-3YSNQK2"
+  default = "V-3YSNQK2"
 }
 
 variable "group_id" {

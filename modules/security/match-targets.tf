@@ -1,5 +1,5 @@
 resource "akamai_appsec_match_target" "website_8790835" {
-  config_id = akamai_appsec_configuration.config.config_id
+  config_id = data.akamai_appsec_configuration.config.config_id
   match_target = jsonencode(
     {
       "defaultFile" : "NO_MATCH",
@@ -20,7 +20,7 @@ resource "akamai_appsec_match_target" "website_8790835" {
   )
 }
 resource "akamai_appsec_match_target" "website_8934438" {
-  config_id = akamai_appsec_configuration.config.config_id
+  config_id = data.akamai_appsec_configuration.config.config_id
   match_target = jsonencode(
     {
       "defaultFile" : "NO_MATCH",
@@ -42,7 +42,7 @@ resource "akamai_appsec_match_target" "website_8934438" {
 }
 
 resource "akamai_appsec_match_target" "api_8848231" {
-  config_id = akamai_appsec_configuration.config.config_id
+  config_id = data.akamai_appsec_configuration.config.config_id
   match_target = jsonencode(
     {
       "apis" : [
@@ -61,7 +61,7 @@ resource "akamai_appsec_match_target" "api_8848231" {
 }
 
 resource "akamai_appsec_match_target" "api_8934439" {
-  config_id = akamai_appsec_configuration.config.config_id
+  config_id = data.akamai_appsec_configuration.config.config_id
   match_target = jsonencode(
     {
       "apis" : [

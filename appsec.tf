@@ -5,6 +5,7 @@ module "security" {
   description = var.description
   contract_id = var.contract_id
   group_name  = var.group_name
+  config_id   = var.config_id
 }
 
 module "activate-security" {

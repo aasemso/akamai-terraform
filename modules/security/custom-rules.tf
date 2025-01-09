@@ -1,5 +1,5 @@
 resource "akamai_appsec_custom_rule" "prefixcli_rule_60272823" {
-  config_id = akamai_appsec_configuration.config.config_id
+  config_id = data.akamai_appsec_configuration.config.config_id
   custom_rule = jsonencode(
     {
       "conditions" : [
@@ -50,7 +50,7 @@ resource "akamai_appsec_custom_rule" "prefixcli_rule_60272823" {
 }
 
 resource "akamai_appsec_custom_rule" "ftp_block_60272329" {
-  config_id = akamai_appsec_configuration.config.config_id
+  config_id = data.akamai_appsec_configuration.config.config_id
   custom_rule = jsonencode(
     {
       "conditions" : [
@@ -77,7 +77,7 @@ resource "akamai_appsec_custom_rule" "ftp_block_60272329" {
 }
 
 resource "akamai_appsec_custom_rule" "au_query_string_60271965" {
-  config_id = akamai_appsec_configuration.config.config_id
+  config_id = data.akamai_appsec_configuration.config.config_id
   custom_rule = jsonencode(
     {
       "conditions" : [
