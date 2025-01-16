@@ -10,3 +10,9 @@ Create a .edgerc file (for authenticating with Akamai’s APIs and CLI)
 ``` sh 
 $ akamai terraform export-appsec < security configuration name >
 ```
+
+
+Install nvm then,
+``` sh 
+akamai install property-manager
+```

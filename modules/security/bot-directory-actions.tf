@@ -210,7 +210,7 @@ resource "akamai_botman_custom_bot_category_action" "juice_shop_ase_automatic_po
 resource "akamai_botman_custom_bot_category_action" "juice_shop_ase_automatic_policy_ak_2410wcxp_impersonatorpartnerbot_f0a8eb23-3a1e-4d6b-9448-055d5c81b23a" {
   config_id          = data.akamai_appsec_configuration.config.config_id
   security_policy_id = akamai_botman_bot_management_settings.juice_shop_ase_automatic_policy.security_policy_id
-  category_id        = data.akamai_botman_custom_bot_category.ak_2410wcxp_impersonatorpartnerbot_f0a8eb23-3a1e-4d6b-9448-055d5c81b23a.category_id
+  category_id        = akamai_botman_custom_bot_category.ak_2410wcxp_impersonatorpartnerbot_f0a8eb23-3a1e-4d6b-9448-055d5c81b23a.category_id
   custom_bot_category_action = jsonencode(
     {
       "action" : "deny"
