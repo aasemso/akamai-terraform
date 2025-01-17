@@ -16,3 +16,8 @@ Install nvm then,
 ``` sh 
 akamai install property-manager
 ```
+
+If errors with duplicate or not unique resources run
+``` sh 
+terraform import <resource> id
+```
