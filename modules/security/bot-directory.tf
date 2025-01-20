@@ -2,7 +2,7 @@ resource "akamai_botman_custom_bot_category" "ak_2410wcxp_friendlypartnerbot_096
   config_id = data.akamai_appsec_configuration.config.config_id
   custom_bot_category = jsonencode(
     {
-      "categoryName" : "2410-wcxp_FriendlyPartnerBot-terraform",
+      "categoryName" : "2410-wcxp_FriendlyPartnerBot",
       "notes" : "Identified by user agent and secret cookie"
     }
   )
@@ -10,10 +10,9 @@ resource "akamai_botman_custom_bot_category" "ak_2410wcxp_friendlypartnerbot_096
 
 resource "akamai_botman_custom_bot_category" "ak_2410wcxp_impersonatorpartnerbot_f0a8eb23-3a1e-4d6b-9448-055d5c81b23a" {
   config_id = data.akamai_appsec_configuration.config.config_id
-  #category_id = 
   custom_bot_category = jsonencode(
     {
-      "categoryName" : "2410-wcxp_ImpersonatorPartnerBot-terraform"
+      "categoryName" : "2410-wcxp_ImpersonatorPartnerBot"
     }
   )
 }
@@ -27,7 +26,7 @@ resource "akamai_botman_custom_defined_bot" "ak_2410wcxp_friendlyjailbot_7534d60
   config_id = data.akamai_botman_custom_bot_category_sequence.custom_bot_category_sequence.config_id
   custom_defined_bot = jsonencode(
     {
-      "botName" : "2410-wcxp_FriendlyJailBot-terraform",
+      "botName" : "2410-wcxp_FriendlyJailBot",
       "categoryId" : "09631d9f-e255-4e46-ab7f-6722531409c0",
       "conditions" : [
         {
@@ -64,7 +63,7 @@ resource "akamai_botman_custom_defined_bot" "ak_2410wcxp_impersonatorjailbot_e8a
   config_id = data.akamai_botman_custom_bot_category_sequence.custom_bot_category_sequence.config_id
   custom_defined_bot = jsonencode(
     {
-      "botName" : "2410-wcxp_ImpersonatorJailBot-terraform",
+      "botName" : "2410-wcxp_ImpersonatorJailBot",
       "categoryId" : "f0a8eb23-3a1e-4d6b-9448-055d5c81b23a",
       "conditions" : [
         {
