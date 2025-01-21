@@ -1,18 +1,18 @@
 # akamai-terraform
 How to export existing akamai configuration
 ``` sh 
-$ brew install akamai
+brew install akamai
 ```
 ``` sh 
-$ akamai install terraform
+akamai install terraform
 ```
-Create a .edgerc file (for authenticating with Akamai’s APIs and CLI)
+Create a .edgerc file (for authenticating with Akamai’s APIs and CLI) and then run:
 ``` sh 
-$ akamai terraform export-appsec < security configuration name >
+akamai terraform export-appsec < security configuration name >
 ```
 
 
-Install nvm then,
+(Optional) Install nvm then,
 ``` sh 
 akamai install property-manager
 ```
